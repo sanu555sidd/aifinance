@@ -81,7 +81,7 @@ export async function generateExpenseInsights(
     console.log('📝 Making API request to OpenRouter...');
 
     const completion = await openai.chat.completions.create({
-      model: 'openai/gpt-3.5-turbo',
+      model: 'openrouter/free',
       messages: [
         {
           role: 'system',
@@ -166,7 +166,7 @@ export async function categorizeExpense(description: string): Promise<string> {
     console.log('📤 Sending request to OpenRouter...');
     
     const completion = await openai.chat.completions.create({
-      model: 'openai/gpt-3.5-turbo',
+      model: 'openrouter/free',
       messages: [
         {
           role: 'system',

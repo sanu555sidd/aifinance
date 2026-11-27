@@ -20,7 +20,7 @@ export async function GET(request: NextRequest) {
     console.log('🏠 App URL:', process.env.NEXT_PUBLIC_APP_URL);
 
     const completion = await openai.chat.completions.create({
-      model: 'openai/gpt-3.5-turbo',
+      model: 'openrouter/free',
       messages: [
         {
           role: 'system',
